@@ -2,3 +2,4 @@ Today is Wednesday
 We are learning Git
 I had my lunch
 Its sunny
+branching and adding
