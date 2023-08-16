@@ -1,4 +1,4 @@
 Today is Wednesday
 We are learning Git
 I had my lunch
-Its sunny afternoon
+Its sunny
