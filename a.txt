@@ -3,3 +3,4 @@ We are learning Git
 I had my lunch
 Its sunny
 Adding data from GitHub
+git fetech+merge
