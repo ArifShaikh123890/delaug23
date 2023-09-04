@@ -1,0 +1,23 @@
+cat /etc/os-release
+sudo yum install https://dev.mysql.com/get/mysql80-community-release-el7-5.noarch.rpm
+ls /etc/yum.repos.d
+sudo yum repolist
+sudo amazon-linux-extras install epel -y
+sudo yum -y install mysql-community-server
+sudo systemctl enable --now mysqld
+systemctl status mysqld
+sudo grep 'temporary password' /var/log/mysqld.log
+sudo mysql_secure_installation -p
+--> Enter password: <INPUT-PRINTED-PASSWORD>
+************************************
+mysql -h <Endpoint> -P 3306 -u admin -p
+************************************
+User Data Script:
+#!/bin/bash
+sudo yum install https://dev.mysql.com/get/mysql80-community-release-el7-5.noarch.rpm -y
+sudo amazon-linux-extras install epel -y
+sudo yum -y install mysql-community-server
+sudo systemctl enable --now mysqld
+************************************
+mysql --version
+************************************
